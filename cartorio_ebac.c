@@ -1,6 +1,6 @@
 #include <stdio.h> //biblioteca de comunicacao com o usuario
-#include <stdlib.h> //biblioteca de alocaÁ„o de espaÁo em memÛria
-#include <locale.h>  //biblioteca de alocaÁÛes de texto por regi„o
+#include <stdlib.h> //biblioteca de aloca√ß√£o de espa√ßo em mem√≥ria
+#include <locale.h>  //biblioteca de aloca√ß√≥es de texto por regi√£o
 #include <string.h> // biblioteca responsavel por cuida das string
 
 int main()
@@ -16,11 +16,11 @@ int main()
 		setlocale(LC_ALL,"Portuguese"); //definindo a liguagem
 		
 		printf("### Cartorio da EBAC ### \n\n"); //inicio do menu
-		printf(" Escolha a opÁ„o desejada do menu \n\n");
+		printf(" Escolha a op√ß√£o desejada do menu \n\n");
 		printf("\t 1 - Registra nomes \n");
 		printf("\t 2 - Consultar nomes \n");
 		printf("\t 3 - Deletar nomes \n \n");// Fim do menu
-		printf("opÁ„o:");
+		printf("op√ß√£o:");
 		
 		scanf("%d", &opcao);//Escolha e armazenamento dos usuario
 		
@@ -43,7 +43,7 @@ int main()
 			break;
 			
 			default:
-			printf("Essa opÁ„o n„o est· disponivel \n \n");
+			printf("Essa op√ß√£o n√£o est√° disponivel \n \n");
 			system("pause");
 			break;
 				
@@ -137,7 +137,7 @@ int consulta()
 	
 	while(fgets(conteudo, 200, file) !=NULL)
 	{
-		printf("\n Essa s„o as informaÁıes do ususario\n\n");
+		printf("\n Essa s√£o as informa√ß√µes do ususario\n\n");
 		
 		token = strtok(	conteudo,",");
 		printf(" CPF: %s \n", token);
@@ -173,7 +173,7 @@ int deletar()
 	
 	if(file == NULL)
 	{
-		printf("Arquivo n„o se encontra \n");
+		printf("Arquivo n√£o se encontra \n");
 		
 		
 	}
